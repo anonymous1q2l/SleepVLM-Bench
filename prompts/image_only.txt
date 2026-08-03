@@ -1,0 +1,2 @@
+This image shows EEG, EOG, and EMG signals from a 30-second sleep epoch (from top to bottom). Please determine which sleep stage (W, N1, N2, N3, REM) this period is most likely to belong to, and briefly explain your reasoning.
+

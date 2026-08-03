@@ -1,0 +1,20 @@
+This image shows EEG, EOG, and EMG signals from a 30-second sleep epoch (from top to bottom). Determine the most likely sleep stage (W, N1, N2, N3, REM) and explain why.
+
+Use the following EEG waveform and sleep-stage classification criteria:
+
+Sleep Stage Classification Rules:
+W: EEG shows alpha rhythm for more than 50% of the epoch; EOG may show eye movements; EMG has relatively high tone.
+N1: EEG shows low-amplitude mixed-frequency activity for more than 50% of the epoch; vertex sharp waves may be present; EOG may show slow eye movements; EMG tone decreases.
+N2: EEG contains a sleep spindle or K-complex; EOG activity is usually low; EMG tone is lower than during wakefulness.
+N3: EEG slow waves occupy more than 20% of the epoch; EOG activity is low; EMG tone is reduced.
+REM: EEG shows low-amplitude mixed-frequency or sawtooth activity; EOG shows rapid eye movements; EMG shows very low tone or atonia.
+
+EEG Waveform Identification Rules:
+Slow wave: 0.5-2 Hz with peak-to-peak amplitude greater than 75 microvolts.
+Sawtooth wave: sharp triangular activity at 2-6 Hz.
+Alpha rhythm: sinusoidal activity at 8-13 Hz.
+Low-amplitude mixed-frequency activity: predominantly low-amplitude activity around 4-7 Hz.
+Vertex sharp wave: a sharp waveform lasting less than 0.5 seconds.
+Sleep spindle: 11-16 Hz, commonly 12-14 Hz, with a spindle-shaped envelope lasting at least 0.5 seconds.
+K-complex: a sharp negative deflection followed by a positive component, with total duration at least 0.5 seconds.
+

@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.DS_Store
+
+# Generated data and experiment artifacts
+artifacts/
+data/raw/
+data/derived/
+outputs/*
+!outputs/.gitkeep
+manifests/*
+!manifests/.gitkeep
+
+# Credentials and local overrides
+.env
+configs/local/
+
+# Model weights and checkpoints must be stored outside version control.
+*.ckpt
+*.pt
+*.pth
+*.safetensors

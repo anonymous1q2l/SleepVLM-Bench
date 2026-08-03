@@ -1,0 +1,3 @@
+STAGES = ("W", "N1", "N2", "N3", "REM")
+INVALID_LABEL = "INVALID"
+

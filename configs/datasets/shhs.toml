@@ -1,0 +1,29 @@
+[dataset]
+name = "SHHS"
+format = "shhs_profusion_xml"
+raw_root = "data/raw/shhs"
+edf_root = "data/raw/shhs/polysomnography/edfs/shhs1"
+annotation_root = "data/raw/shhs/polysomnography/annotations-events-profusion/shhs1"
+edf_glob = "shhs1-*.edf"
+annotation_glob = "shhs1-*-profusion.xml"
+eeg_channel = "EEG"
+eog_channel = "EOG(L)"
+emg_channel = "EMG"
+powerline_hz = 60.0
+
+[preprocessing]
+target_sfreq = 100.0
+epoch_seconds = 30
+filter_order = 4
+anti_alias_hz = 48.0
+eeg_band_hz = [0.3, 35.0]
+eog_band_hz = [0.1, 10.0]
+emg_band_hz = [10.0, 45.0]
+normalize = false
+
+[paper_diagnostic_counts]
+W = 327
+N1 = 494
+N2 = 605
+N3 = 472
+REM = 492

@@ -1,0 +1,28 @@
+[dataset]
+name = "ISRUC"
+format = "isruc_stage_txt"
+raw_root = "data/raw/isruc"
+subject_glob = "*"
+edf_glob = "*.edf"
+annotation_glob = "*_1.txt"
+eeg_channel = "C4-A1"
+eog_channel = "LOC-A2"
+emg_channel = "X1"
+powerline_hz = 50.0
+
+[preprocessing]
+target_sfreq = 100.0
+epoch_seconds = 30
+filter_order = 4
+anti_alias_hz = 48.0
+eeg_band_hz = [0.3, 35.0]
+eog_band_hz = [0.1, 10.0]
+emg_band_hz = [10.0, 45.0]
+normalize = false
+
+[paper_diagnostic_counts]
+W = 460
+N1 = 443
+N2 = 499
+N3 = 447
+REM = 400

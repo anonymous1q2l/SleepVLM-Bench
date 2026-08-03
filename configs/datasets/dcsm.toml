@@ -1,0 +1,27 @@
+[dataset]
+name = "DCSM"
+format = "dcsm_ids"
+raw_root = "data/raw/dcsm"
+edf_glob = "**/*psg*.edf"
+annotation_glob = "**/*hypnogram*.ids"
+eeg_channel = "F4-M1"
+eog_channel = "E1-M2"
+emg_channel = "CHIN"
+powerline_hz = 50.0
+
+[preprocessing]
+target_sfreq = 100.0
+epoch_seconds = 30
+filter_order = 4
+anti_alias_hz = 48.0
+eeg_band_hz = [0.3, 35.0]
+eog_band_hz = [0.1, 10.0]
+emg_band_hz = [10.0, 45.0]
+normalize = false
+
+[paper_diagnostic_counts]
+W = 453
+N1 = 585
+N2 = 606
+N3 = 486
+REM = 572

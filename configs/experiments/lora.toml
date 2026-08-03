@@ -1,0 +1,39 @@
+[run]
+task = "lora_vlm"
+manifest = "manifests/epochs_split.csv"
+output_root = "outputs"
+seeds = [2024, 2025, 2026]
+
+[search_space]
+ranks = [8, 16]
+alphas = [16, 32]
+dropout = 0.05
+learning_rates = [0.0001, 0.0002, 0.0005]
+batch_sizes = [4, 8, 16]
+max_epochs = 10
+early_stopping_patience = 3
+selection_metric = "macro_f1"
+
+[[models]]
+paper_name = "Qwen2.5-VL-7B"
+model_id = "Qwen/Qwen2.5-VL-7B-Instruct"
+model_revision = ""
+enabled = false
+verified = false
+
+[[models]]
+paper_name = "LLaVA-1.5-7B"
+model_id = "liuhaotian/llava-v1.5-7b"
+model_revision = ""
+enabled = false
+verified = false
+
+[[models]]
+paper_name = "Llama-3.2-11B"
+model_id = "meta-llama/Llama-3.2-11B-Vision-Instruct"
+model_revision = ""
+enabled = false
+verified = false
+
+# This file records the manuscript claim. It is not evidence that the search was run.
+# Each realized run must save a resolved config, seed, adapter, log, and predictions.

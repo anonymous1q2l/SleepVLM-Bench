@@ -1,0 +1,24 @@
+[run]
+task = "sequence_baselines"
+manifest = "manifests/epochs_split.csv"
+output_root = "outputs"
+seeds = [2024, 2025, 2026]
+
+[[conditions]]
+id = "chatts14b_eeg30hz"
+family = "ChatTS"
+input_modality = "single_eeg"
+input_sfreq = 30.0
+
+[[conditions]]
+id = "deepsleep_eeg100hz"
+family = "DeepSleepNet"
+input_modality = "single_eeg"
+input_sfreq = 100.0
+
+[[conditions]]
+id = "attnsleep_eeg100hz"
+family = "AttnSleep"
+input_modality = "single_eeg"
+input_sfreq = 100.0
+
