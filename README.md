@@ -1,7 +1,6 @@
 # SleepVLM-Bench
 
-This is a clean-room reconstruction of the code structure required by the current
-SleepVLM-Bench manuscript. The legacy scripts remain untouched in `../dataset`.
+title：A reproducible benchmark of off-the-shelf VLMs for PSG sleep staging]{A Reproducible Benchmark Showing the Limitations of General-Purpose Multimodal Foundation Models for PSG Sleep Staging under Naive Waveform-Image Prompting
 
 The project is **not yet a reproduction of the paper's numerical tables**. It first
 establishes an auditable pipeline so that every reported value can be traced to a
